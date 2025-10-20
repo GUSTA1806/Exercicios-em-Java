@@ -1,35 +1,24 @@
-import java.util.Scanner;
-
 public class Main{
     public static void main(String[] args){
+        int a = 10;
+        double b = 20.5;
+        boolean c = true;
+        double resultado1;
+        double resultado2;
 
-        Scanner input = new Scanner(System.in);
+        resultado1 = a + b;
+        System.out.println("Soma: " + resultado1);
 
-        System.out.print("Digite seu nome:");
-        String nome = input.nextLine();
+        resultado2 = a * b;
+        System.out.println("Multiplicação: " +resultado2);
 
-        System.out.print("Digite a primeira nota:");
-        double nota1 = input.nextDouble();
-
-        System.out.print("Digite a segunda nota:");
-        double nota2 = input.nextDouble();
-
-        System.out.print("Digite a terceira nota:");
-        double nota3 = input.nextDouble();
-
-        double media = (nota1 + nota2 + nota3)/3;
-
-        System.out.println("----------------------------");
-
-       System.out.println("Nome do aluno: " +nome);
-        media = Math.ceil(media * 10) / 10.0;
-       System.out.printf("Media do aluno: %.1f\n", media);
-
-       if(media >= 6){
-           System.out.println("Resultado: Aprovado");
-       }else{
-           System.out.println("Resultado: Reprovado");
-       }
+        c = !c;
+        System.out.println("Inverso é: " +c);
 
     }
+
+
+
+
+
 }
