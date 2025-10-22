@@ -1,24 +1,15 @@
-public class Main{
+    public class Main {
     public static void main(String[] args){
-        int a = 10;
-        double b = 20.5;
-        boolean c = true;
-        double resultado1;
-        double resultado2;
 
-        resultado1 = a + b;
-        System.out.println("Soma: " + resultado1);
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.nome = "Gustavo";
+        pessoa1.idade = 18;
 
-        resultado2 = a * b;
-        System.out.println("Multiplicação: " +resultado2);
+        Pessoa pessoa2 = new Pessoa();
+        pessoa2.nome = "Jorge";
+        pessoa2.idade = 15;
 
-        c = !c;
-        System.out.println("Inverso é: " +c);
-
+        pessoa1.mostrarInformacoes();
+        pessoa2.mostrarInformacoes();
     }
-
-
-
-
-
 }
